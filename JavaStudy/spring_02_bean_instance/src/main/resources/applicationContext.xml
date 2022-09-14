@@ -11,13 +11,13 @@
     <!--    <bean id="orderDao" class="com.itheima.factory.OrderDaoFactory" factory-method="getOrderDao"/>-->
 
     <!--方式三：使用实例工厂实例化bean 先造工厂对象-->
-    <bean id="userFactory" class="com.itheima.factory.UserDaoFactory"/>
-    <bean id="userDao" factory-method="getUserDao" factory-bean="userFactory"/>
+<!--    <bean id="userFactory" class="com.itheima.factory.UserDaoFactory"/>-->
+<!--    <bean id="userDao" factory-method="getUserDao" factory-bean="userFactory"/>-->
     <!--    <bean id="userFactory" class="com.itheima.factory.UserDaoFactory"/>
 
         <bean id="userDao" factory-method="getUserDao" factory-bean="userFactory"/>-->
 
-    <!--方式四：使用FactoryBean实例化bean-->
-<!--    <bean id="userDao" class="com.itheima.factory.UserDaoFactoryBean"/>-->
+    <!--方式四：使用FactoryBean实例化bean 方式三的变种-->
+    <bean id="userDao" class="com.itheima.factory.UserDaoFactoryBean"/>
 
 </beans>

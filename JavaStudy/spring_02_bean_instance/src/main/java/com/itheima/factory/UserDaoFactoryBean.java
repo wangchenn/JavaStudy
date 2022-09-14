@@ -14,4 +14,8 @@ public class UserDaoFactoryBean implements FactoryBean<UserDao> {
         return UserDao.class;
     }
 
+    @Override
+    public boolean isSingleton() {
+        return FactoryBean.super.isSingleton(); //true的话就是单例 false就是非单例
+    }
 }
