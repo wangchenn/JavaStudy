@@ -8,7 +8,7 @@
     <!--bean标签标示配置bean
     id属性标示给bean起名字
     class属性表示给bean定义类型-->
-    <!--  class要配置实现类   id不能重复  不写scope默认是 singleton 可以设置非单例 prototype-->
+    <!--  class要配置实现类   id不能重复  不写scope默认是 singled 可以设置非单例-->
     <bean id="bookDao" name="bookDao2 就是玩 aaa bbb" class="com.itheima.dao.impl.BookDaoImpl" scope="prototype"/>
 
     <bean id="bookService" name="新的名字" class="com.itheima.service.impl.BookServiceImpl">

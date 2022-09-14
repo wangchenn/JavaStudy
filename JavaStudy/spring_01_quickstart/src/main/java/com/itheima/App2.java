@@ -1,6 +1,5 @@
 package com.itheima;
 
-import com.itheima.dao.BookDao;
 import com.itheima.service.BookService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -13,7 +12,9 @@ public class App2 {
 //        BookDao bookDao = (BookDao) ctx.getBean("bookDao");
 //        bookDao.save();
 
-        BookService bookService = (BookService) ctx.getBean("bookService");
+        BookService bookService = (BookService) ctx.getBean("新的名字");
+//        BookService bookService = (BookService) ctx.getBean("failed"); 不是这里写错了 就是 application里的名字有错误
+//        Exception in thread "main" org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'failed' available
         bookService.save();
 
     }

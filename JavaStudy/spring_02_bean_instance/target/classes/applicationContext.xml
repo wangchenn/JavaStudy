@@ -10,14 +10,12 @@
     <!--方式二：使用静态工厂实例化bean  class 配什么就造什么对象-->
     <!--    <bean id="orderDao" class="com.itheima.factory.OrderDaoFactory" factory-method="getOrderDao"/>-->
 
-    <!--方式三：使用实例工厂实例化bean 先造工厂对象-->
-    <bean id="userFactory" class="com.itheima.factory.UserDaoFactory"/>
-    <bean id="userDao" factory-method="getUserDao" factory-bean="userFactory"/>
+    <!--方式三：使用实例工厂实例化bean-->
     <!--    <bean id="userFactory" class="com.itheima.factory.UserDaoFactory"/>
 
         <bean id="userDao" factory-method="getUserDao" factory-bean="userFactory"/>-->
 
     <!--方式四：使用FactoryBean实例化bean-->
-<!--    <bean id="userDao" class="com.itheima.factory.UserDaoFactoryBean"/>-->
+    <bean id="userDao" class="com.itheima.factory.UserDaoFactoryBean"/>
 
 </beans>

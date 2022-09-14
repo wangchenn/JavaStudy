@@ -1,2 +1,5 @@
-package com.itheima.dao;public interface UserDao {
+package com.itheima.dao;
+
+public interface UserDao {
+    public void save();
 }
