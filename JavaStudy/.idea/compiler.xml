@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring_02_bean_instance" />
-        <module name="Mybatis" />
         <module name="spring_01_quickstart" />
+        <module name="spring_04_di_set" />
+        <module name="spring_02_bean_instance" />
+        <module name="spring_03_bean_lifecycle" />
+        <module name="Mybatis" />
       </profile>
     </annotationProcessing>
   </component>
